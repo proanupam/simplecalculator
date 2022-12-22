@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="index.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="calc-container">
+            <div class="calculator-screen" id="calc-screen">
+               
+            </div>
+            <div class="calc-buttons">
+                <div class="button-col-left">
+                    <button onclick="readInputDigit(this.id)" id="digit-1">1</button>
+                    <button onclick="readInputDigit(this.id)" id="digit-2">2</button>
+                    <button onclick="readInputDigit(this.id)" id="digit-3">3</button>
+                    <button onclick="readInputDigit(this.id)" id="digit-4">4</button>
+                    <button onclick="readInputDigit(this.id)" id="digit-5">5</button>
+                    <button onclick="readInputDigit(this.id)" id="digit-6">6</button>
+                    <button onclick="readInputDigit(this.id)" id="digit-7">7</button>
+                    <button onclick="readInputDigit(this.id)" id="digit-8">8</button>
+                    <button onclick="readInputDigit(this.id)" id="digit-9">9</button>
+                    <button onclick="readInputDigit(this.id)" id="digit-0">0</button>
+                    <button onclick="decimalPoint()"><i class="fa-solid fa-circle"></i></button>
+                    <button onclick="deleteOp()"><i class="fa-sharp fa-solid fa-delete-left"></i></button>
+                </div>
+                <div class="button-col-right">
+                    <button id="clearBtn" onclick="clearOp()"><i class="fa-solid fa-eraser"></i></button>
+                    <button id="equals"><i class="fa-solid fa-equals"></i></button>
+                    <button id="multiply" onclick="mathsOp(this.id)"><i class="fa-solid fa-xmark"></i></button>
+                    <button id="add" onclick="mathsOp(this.id)"><i class="fa-solid fa-plus"></i></button>
+                    <button id="sub" onclick="mathsOp(this.id)"><i class="fa-solid fa-minus"></i></button>
+                    <button id="divide" onclick="mathsOp(this.id)"><i class="fa-solid fa-divide"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

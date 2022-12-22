@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+    font-size: 30px;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calc-container{
+    width: 500px;
+    height: 500px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    row-gap: 4px;
+}
+
+.calculator-screen{
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    letter-spacing: 2px;
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.calc-buttons{
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+}
+
+.button-col-right{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.button-col-left{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 8px;
+}
+
+.fa-equals,.fa-xmark,.fa-plus,.fa-minus,.fa-divide,.fa-eraser{
+    padding: 20px;
+}
+
+.fa-circle-c{
+    padding: 30px;
+    color: black;
+}
